@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main  # Set a branch that will trigger a deployment
+      - master  # Set a branch that will trigger a deployment
 
 jobs:
   deploy:
