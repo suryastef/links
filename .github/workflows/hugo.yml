@@ -43,6 +43,8 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
+      - name: debug
+        run: pwd & ls -lah
       - name: Update values.yaml
         uses: fjogeleit/yaml-update-action@main
         with:
