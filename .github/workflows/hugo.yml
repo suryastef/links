@@ -48,7 +48,7 @@ jobs:
       - name: Update values.yaml
         uses: fjogeleit/yaml-update-action@main
         with:
-          valueFile: 'links/themes/lynx/i18n/en.yaml'
+          valueFile: 'themes/lynx/i18n/en.yaml'
           propertyPath: 'footer.powered_by'
           value: ""
           commitChange: false
