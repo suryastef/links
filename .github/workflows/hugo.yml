@@ -43,6 +43,13 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
+      - name: Update values.yaml
+        uses: fjogeleit/yaml-update-action@main
+        with:
+          valueFile: 'links/themes/lynx/i18n/en.yaml'
+          propertyPath: 'footer.powered_by'
+          value: ""
+          commitChange: false
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
