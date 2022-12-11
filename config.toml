@@ -6,7 +6,7 @@ theme = 'lynx'
 [author]
   name = "Surya Stefanus"
   headline = "Born to be a DevOps Engineer"
-  image = "author.png"  # path relative to static directory
+  image = "img/author.png"  # path relative to static directory
 
   links = [
     { email = "mailto:suryastef@gmail.com" },
