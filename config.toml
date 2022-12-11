@@ -1,4 +1,4 @@
-baseURL = 'https://links.suryasatef.net/'
+baseURL = 'https://suryastef.github.io/links'
 languageCode = 'en-us'
 title = 'My Personal Links'
 theme = 'lynx'
