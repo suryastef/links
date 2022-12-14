@@ -33,13 +33,13 @@ jobs:
       - name: Install Hugo CLI
         run: |
           sudo apt install -y hugo
-      - name: Checkout
+      - name: Checkout this Repo
         uses: actions/checkout@v3
-        # with:
-          # submodules: true
-      - name: Add Hugo Theme
-        run: |
-          git submodule add https://github.com/jpanther/lynx themes/lynx
+      - name: Checkout Hugo Theme
+        uses: actions/checkout@v3
+        with:
+          repository: https://github.com/jpanther/lynx
+          path: themes/lynx
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
