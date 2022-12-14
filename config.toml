@@ -16,6 +16,7 @@ copyright = "Copy, right? :thinking_face:"
     { linkedin = "https://linkedin.com/in/suryastef" },
     { telegram = "https://t.me/suryastef" },
     { instagram = "https://instagram.com/suryastef" },
+    { twitter = "https://twitter.com/suryastef" },
     { reddit = "https://reddit.com/user/suryastef" },
     { discord = "https://discord.gg/suryastef#8175" },
     { steam = "https://steamcommunity.com/id/noobwithglasses/" },
@@ -45,7 +46,6 @@ copyright = "Copy, right? :thinking_face:"
     # { tiktok = "https://tiktok.com/@username" },
     # { tumblr = "https://username.tumblr.com" },
     # { twitch = "https://twitch.tv/username" },
-    # { twitter = "https://twitter.com/username" },
     # { whatsapp = "https://wa.me/phone-number" },
     # { youtube = "https://youtube.com/username" },
   ]
