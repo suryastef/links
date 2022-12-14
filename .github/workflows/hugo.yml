@@ -42,7 +42,7 @@ jobs:
         uses: actions/configure-pages@v2
       - name: debug
         run: pwd & ls -lah
-      - name: Update values.yaml
+      - name: Update footer.powered_by
         uses: fjogeleit/yaml-update-action@main
         with:
           valueFile: 'themes/lynx/i18n/en.yaml'
@@ -61,6 +61,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
+          retention-days: 1
           path: ./public
 
   # Deployment job
