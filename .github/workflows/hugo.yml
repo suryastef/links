@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Debug
-        run: pwd & ls -lah
+        run: pwd && ls -lah && echo ${{ steps.deployment.outputs.page_url }}
       - name: Install Hugo CLI
         run: |
           sudo apt install -y hugo
