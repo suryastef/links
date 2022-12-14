@@ -30,11 +30,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Debug
+        run: pwd & ls -lah
       - name: Install Hugo CLI
         run: |
           sudo apt install -y hugo
-      - name: Checkout this Repo
+      - name: Checkout Resources Repo
         uses: actions/checkout@v3
+        with:
+          repository: suryastef/website-resources
+      - name: Move Resources to workdir
+        run: pwd && ls -lah && mv links/* .
       - name: Checkout Hugo Theme
         uses: actions/checkout@v3
         with:
