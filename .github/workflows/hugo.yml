@@ -38,6 +38,7 @@ jobs:
       - name: Checkout Resources Repo
         uses: actions/checkout@v3
         with:
+          token: ${{ secrets.GH_PAT }}
           repository: suryastef/website-resources
       - name: Move Resources to workdir
         run: pwd && ls -lah && mv links/* .
