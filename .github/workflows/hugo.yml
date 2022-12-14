@@ -38,7 +38,7 @@ jobs:
       - name: Checkout Hugo Theme
         uses: actions/checkout@v3
         with:
-          repository: https://github.com/jpanther/lynx
+          repository: jpanther/lynx
           path: themes/lynx
       - name: Setup Pages
         id: pages
